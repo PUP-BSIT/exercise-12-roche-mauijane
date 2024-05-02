@@ -3,7 +3,7 @@ let displayCount = document.querySelector('#count');
 let count = 0;
 let timer;
 
-function start_time() {
+function startTime() {
     timer = setInterval(updateCount, 1000);
 }
 
@@ -12,4 +12,4 @@ function updateCount() {
     displayCount.innerText = count;
 }
 
-startButton.addEventListener('click', start_time);
+startButton.addEventListener('click', startTime);
