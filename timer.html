@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maui's Timer</title>
-</head>
-<body>
-        <div id="count">0</div>
-		<button class="" id="start_button" type="button">Start</button>
-		<button class="" id="pause_button" type="button">Pause</button>
-		<button class="" id="resume_button" type="button">Resume</button>
-		<button class="" id="stop_button" type="button">Stop</button>
-		<script src="./script.js"></script>
-</body>
+	<head>
+		<link rel="stylesheet" href="./style.css" />
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+        <div class="timer-container">
+            <h2>Timer</h2>
+            <div class="count" id="count">0</div>
+            <div>
+                <button class="buttons" id="start_button" type="button">
+                    Start
+                </button>
+                <button class="buttons" id="pause_button" type="button">
+                    Pause
+                </button>
+                <button class="buttons" id="resume_button" type="button">
+                    Resume
+                </button>
+                <button class="buttons" id="stop_button" type="button">
+                    Stop
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+	</body>
 </html>
