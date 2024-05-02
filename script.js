@@ -1,5 +1,6 @@
 let startButton = document.querySelector('#start_button');
 let pauseButton = document.querySelector('#pause_button');
+let resumeButton = document.querySelector('#resume_button');
 let displayCount = document.querySelector('#count');
 let count = 0;
 let timer;
@@ -12,6 +13,10 @@ function pauseTime() {
     clearInterval(timer);
 }
 
+function resumeTime() {
+    startTime();
+}
+
 function updateCount() {
     count++;
     displayCount.innerText = count;
@@ -19,3 +24,4 @@ function updateCount() {
 
 startButton.addEventListener('click', startTime);
 pauseButton.addEventListener('click', pauseTime);
+resumeButton.addEventListener('click', resumeTime);
